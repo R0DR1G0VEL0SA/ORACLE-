@@ -1,8 +1,6 @@
-/**************************************************************
-   TEMA : TIPO DE DATOS
-   AUTOR: RODRIGO VELOSA
-   FECHA: 2019/07/13
-**************************************************************/
+/*
+   TIPO DE DATOS
+*/
 
 DECLARE
 		-- NUMBER ((Presición, escala)); 
