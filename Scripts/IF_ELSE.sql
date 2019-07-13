@@ -82,3 +82,23 @@ EXCEPTION
 		 NULL; 
 END;
 
+/********************** EJEMPLO #3 **************************/
+
+DECLARE
+  --Declaracion de variables
+	cadena1 varchar2(20):= 'codigo';
+	cadena2 varchar2(20):= 'CODIGO';
+BEGIN
+	--IF DEL BLOQUE ANONIMO
+	IF UPPER(TRIM(cadena1)) like UPPER(TRIM(cadena2)) THEN
+	   DBMS_OUTPUT.put_line('Primera condicion');                                             
+  ELSIF cadena1 not like cadena2  THEN
+	   DBMS_OUTPUT.put_line('Segunda condicion');
+  ELSE
+	   DBMS_OUTPUT.put_line('Tercera condicion');
+	END IF;
+EXCEPTION
+   WHEN OTHERS THEN 
+		  -- Aqui va el control de los errores
+		 NULL; 
+END;
